@@ -10,8 +10,8 @@
 - enter your desire port for accesing jenkins
 - save the inbound rule
 
-## installing jenkins inside  vm
-installing jenkins and configure it is a headache . we can do it simple by using docker.we create a compose file and we just run it .
+## Running jenkins inside docker
+installing jenkins and configure inside vm it's a headache . we can do it simple by using docker.we create a compose file and we just run it .
 
 
 ## Installation
@@ -71,3 +71,4 @@ To Access jenkins, type public ip of your vm:host port
 ```bash
   pubicIP:host port
 ```
+## PEACE OUT ✌️
