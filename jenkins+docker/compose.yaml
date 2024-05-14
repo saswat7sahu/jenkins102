@@ -1,0 +1,12 @@
+version: "3" # use docker engine version 3
+services:
+  jenkins: # container name
+    image: jenkins/jenkins # downloading latest jenkins image 
+    ports:
+      - "9001:8080" #bind localport:to jenkins port.you can change the host port
+    volumes:
+      - jenkins_home:/var/jenkins_home # persist data across container recreation, updating the image.
+    restart: unless-stopped # when you instruct Jenkins to restart this ensures it will start back up. 
+
+volumes:
+  jenkins_home:
